@@ -1,0 +1,92 @@
+/* Styles for the whole page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: lightgrey; /* Light grey background */
+    color: black; /* Black text color */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Vertical padding */
+    text-align: center; /* Center the text */
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.navbar-text{
+    margin-left: 630px;
+    font-size: 25px;
+    font-stretch: expanded;
+    font-weight: bold;
+}
+/* Content styling */
+.content {
+    padding: 60px 20px 20px; /* Padding to account for the fixed navbar */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: calc(100vh - 60px); /*    Adjust height based on navbar */
+    text-align: center; /* Center text in content */
+    background-color: white;
+    margin-left: 290px;
+}
+
+/* Employee details styling */
+.employee-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 350px; /* Center the image and text */
+}
+
+/* Circular image styling */
+.emp_det_image {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below image */
+}
+/* Employee details text styling */
+.details h3 {
+    margin: 10px 0; /* Space between details */
+    font-size: 25px; /* Font size */
+    font-weight: 200px;
+    color: black; /* Black text color */
+}
+
+/* Actions button styling */
+.actions {
+    margin-top: 20px; /* Space above buttons */
+}
+
+.btn {
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px; /* Space between buttons */
+    width: 150px;
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Green background for edit button */
+    font-size: 20px;
+}
+
+.edit-btn:hover{
+    background-color: #357938; /* Green background for edit button */
+}
+
+.logout-btn {
+    background-color: #f44336; /* Red background for logout button */
+    font-size:20px;
+}
+
+.logout-btn:hover{
+    background-color: #b9342b; /* Red background for logout button */
+}

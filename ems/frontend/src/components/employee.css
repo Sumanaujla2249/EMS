@@ -1,0 +1,86 @@
+/* Container style to enable scrolling when needed */
+
+
+.scroll {
+  max-height: 400px; /* Adjust this height as necessary */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  margin-top: 10px;  /* Optional: Adjust the margin to your liking */
+}
+
+
+/* Table styles */
+.table {
+  width: 100%; /* Full width of the container */
+  table-layout: fixed; /* Fixed layout to respect column widths */
+  border-collapse: separate; /* Separate borders to control horizontal lines */
+  border-spacing: 0; /* No spacing between cells */
+}
+
+/* Table header styles */
+thead th {
+  background-color: #f8f8f8; /* Light background for headers */
+  border-bottom: 2px solid #ddd; /* Horizontal line under table headers */
+}
+
+/* Table body styles */
+tbody td {
+  border-bottom: 1px solid #ddd; /* Horizontal line between table rows */
+}
+
+/* Common styles for table cells */
+th, td {
+  padding: 8px 12px; /* Adequate padding for readability */
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: none; /* Remove all borders except for horizontal lines */
+}
+
+/* Image styles */
+td img.e_image {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Adjusted widths to fit within 100% of the table's width */
+th:nth-child(1), td:nth-child(1) {
+  width: 20%; /* Width for Name column */
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 15%; /* Width for Image column */
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 20%; /* Width for Email column */
+}
+
+th:nth-child(4), td:nth-child(4) {
+  width: 20%; /* Width for Address column */
+}
+
+th:nth-child(5), td:nth-child(5) {
+  width: 20%; /* Width for Salary column */
+}
+
+th:nth-child(6), td:nth-child(6) {
+  width: 20%; /* Width for Category column */
+}
+
+th:nth-child(7), td:nth-child(7) {
+  width: 25%; /* Width for Action column */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  th, td {
+    font-size: 12px; /* Smaller font size on smaller screens */
+    padding: 6px 8px; /* Reduced padding */
+  }
+
+  td img.e_image {
+    width: 40px; /* Smaller image size */
+    height: 30px; /* Adjusted height */
+  }
+}

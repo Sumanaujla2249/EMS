@@ -1,0 +1,106 @@
+/* Wrapper for the entire Add Employee component */
+.add-employee-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0 15px; /* Prevent touching edges */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Container for the form */
+.form-container {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%; /* Ensure container fits within available width */
+    max-width: 600px; /* Set maximum width to 600px */
+    height: 80vh; /* Set height to 80% of the viewport height */
+    border: 1px solid #ced4da;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scroll if content exceeds height */
+    margin-left: 50px; /* Shift container slightly to the left */
+    margin-right: auto; /* Center container horizontally */
+    margin-top: 20px; /* Ensure spacing from top */
+}
+
+/* Centered heading with margin below */
+h2.text-center {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Full-width button */
+button.w-100 {
+    width: 100%;
+}
+
+/* Input and select styles */
+input.form-control, select.form-select {
+    width: 100%; /* Ensure inputs and select take full width */
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    background-color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Focused input/select styles */
+input.form-control:focus, select.form-select:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Block label to ensure it appears above the input */
+label.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Table styles */
+.table-container {
+    max-height: 200px; /* Set maximum height to 300px */
+    overflow-y: auto; /* Enable vertical scroll if table exceeds height */
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Ensure inputs and select don't overflow the container */
+input.form-control, select.form-select {
+    box-sizing: border-box;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 576px) {
+    .add-employee-wrapper {
+        padding: 0 10px;
+    }
+
+    .form-container {
+        padding: 1rem;
+        max-width: 100%; /* Ensure the form container adapts to smaller screens */
+        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-right: 0; /* Reset margin-right for smaller screens */
+    }
+}

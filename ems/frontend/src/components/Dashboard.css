@@ -1,0 +1,73 @@
+/* Container for the entire dashboard page */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar wrapper */
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 320px; /* Width of the sidebar */
+  background-color: #343a40; /* Dark background */
+  color: white;
+  height: 150vh; /* Full height */
+  position: fixed; /* Fixed position on the left */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row; /* Stack header and menu vertically */
+}
+
+.sidebar-logo {
+  justify-content: center;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 30px 0;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a:hover {
+  color: #ccc; /* Lighter color on hover */
+}
+
+.sidebar a .bi {
+  margin-right: 10px;
+}
+
+/* Main content styling */
+.main-content {
+  margin-left: 320px; /* Adjusted to match the sidebar width */
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* Content wrapper styling */
+.content{
+  height: 100vh; /* Full height */
+  top: 0;
+  left:0;
+}
+
+.head{
+  height:60px;
+  background-color: grey;
+  color: black;
+  width:175vh;
+  margin-top: -665px;
+  padding: 20px;
+}
+
+.content-body{
+  position: fixed;
+}
